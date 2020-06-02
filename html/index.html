@@ -139,8 +139,8 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </div>
-      <div class="dropdown utilityButtons">
-        <div class="form-group">
+      <div class="date dropdown utilityButtons">
+        <div >
           <input
             type="date"
             name="bday"
@@ -210,19 +210,23 @@
 
     <!-- Charts -->
     <div class="row">
-      <div class="col-sm-6 col-md-12 col-lg-5">
+      <div class="barChart col-sm-6 col-md-12 col-lg-5">
         <div class="card chart-card">
-          <div class="card-body">
-            <div class="container">
-              <nav
-                class="navbar navbar-expand-lg navbar-light bg-light barChartNav"
+          <ul class="nav nav-pills navbar-light bg-light barChartNav">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#bar-chart"
+                >Chart</a
               >
-                <a class="nav-link active" href="#">Chart</a>
-                <a class="nav-link" href="#">Data</a>
-              </nav>
-              <br />
-              <div class="outer d-sm-flex flex-row">
-                <div class="inner">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#data">Data</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane container active" id="bar-chart">
+              <div class="menu d-sm-flex flex-md-row flex-sm-column mt-3">
+                <div class="menu-item">
                   <input
                     type="checkbox"
                     checked
@@ -233,7 +237,7 @@
                     data-offstyle="warning"
                   />
                 </div>
-                <div class="dropdown inner">
+                <div class="dropdown menu-item">
                   <button
                     class="btn btn-light dropdown-toggle"
                     type="button"
@@ -252,7 +256,7 @@
                     <a class="dropdown-item" href="#">Last 5 Days</a>
                   </div>
                 </div>
-                <div class="inner">
+                <div class="menu-item">
                   <input
                     type="checkbox"
                     checked
@@ -266,6 +270,9 @@
               </div>
 
               <div id="bar-chartdiv"></div>
+            </div>
+            <div class="tab-pane container" id="data">
+              <h1>Data goes here</h1>
             </div>
           </div>
         </div>
