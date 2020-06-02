@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Covid-19 Dashboard</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        COVID-19
+        <span>
+          Surveillance Dashboard
+        </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-sm-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle bg-light"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Tutorials
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle bg-light"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                More Items
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Utility Buttons -->
+
+    <div class="d-sm-flex flex-wrap mt-4">
+      <div class="dropdown utilityButtons">
+        <button
+          class="btn dropdown-toggle btn-outline-secondary"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Cases
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="dropdown utilityButtons">
+        <button
+          class="btn dropdown-toggle btn-outline-secondary"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          All Regions
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="dropdown utilityButtons">
+        <div class="form-group">
+          <input
+            type="date"
+            name="bday"
+            max="3000-12-31"
+            min="1000-01-01"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="utilityButtons ml-sm-auto DownloadBtn">
+        <button class="btn download">
+          <i class="fas fa-arrow-down mr-2"></i>
+          Download all
+        </button>
+      </div>
+      <div class="utilityButtons FAQBtn">
+        <button class="btn download">
+          <i class="far fa-question-circle mr-2"></i>
+          FAQ
+        </button>
+      </div>
+    </div>
+
+    <!-- Status Cards -->
+    <div class="row">
+      <div class="col-sm-3 col-md-6 col-lg-3">
+        <div class="card active-card stat-cards">
+          <div class="card-body">
+            <p class="card-title">Active</p>
+            <h2 class="card-text">2,963,062</h2>
+            <i class="fas fa-long-arrow-alt-up"></i>
+            <span class="increase ml-2">9,544</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-6 col-lg-3">
+        <div class="card confirmed-card stat-cards">
+          <div class="card-body">
+            <p class="card-title">Confirmed</p>
+            <h2 class="card-text">5,516,363</h2>
+            <i class="fas fa-long-arrow-alt-up"></i>
+            <span class="increase ml-2">20,820</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-6 col-lg-3">
+        <div class="card death-card stat-cards">
+          <div class="card-body">
+            <p class="card-title">Deaths</p>
+            <h2 class="card-text">345,995</h2>
+            <i class="fas fa-long-arrow-alt-up"></i>
+            <span class="increase ml-2">311</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-6 col-lg-3">
+        <div class="card recovered-card stat-cards">
+          <div class="card-body">
+            <p class="card-title">Recovered</p>
+            <h2 class="card-text">2,207,306</h2>
+            <i class="fas fa-long-arrow-alt-up"></i>
+            <span class="increase ml-2">10,965</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="row">
+      <div class="col-sm-6 col-md-12 col-lg-5">
+        <div class="card chart-card">
+          <div class="card-body">
+            <div class="container">
+              <nav
+                class="navbar navbar-expand-lg navbar-light bg-light barChartNav"
+              >
+                <a class="nav-link active" href="#">Chart</a>
+                <a class="nav-link" href="#">Data</a>
+              </nav>
+              <br />
+              <div class="outer d-sm-flex flex-row">
+                <div class="inner">
+                  <input
+                    type="checkbox"
+                    checked
+                    data-toggle="toggle"
+                    data-on="World"
+                    data-off="India"
+                    data-size="small"
+                    data-offstyle="warning"
+                  />
+                </div>
+                <div class="dropdown inner">
+                  <button
+                    class="btn btn-light dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Last 30 days
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Last 10 days</a>
+                    <a class="dropdown-item" href="#">Last 5 Days</a>
+                  </div>
+                </div>
+                <div class="inner">
+                  <input
+                    type="checkbox"
+                    checked
+                    data-toggle="toggle"
+                    data-on="Commulative"
+                    data-off="Daily"
+                    data-size="small"
+                    data-offstyle="warning"
+                  />
+                </div>
+              </div>
+
+              <div id="bar-chartdiv"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-12 col-lg-7">
+        <div class="card chart-card map-chart">
+          <div class="card-body" id="chartdiv"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-note mt-2">
+        <p>
+          Privacy Notice | Cookie Policy | Terms of Use &copy 2020 Persistent
+          Systems
+        </p>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/data/countries2.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/moonrisekingdom.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/StackedBarChart.js"></script>
+  </body>
+</html>

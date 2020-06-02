@@ -1,0 +1,111 @@
+.navbar {
+  border-bottom: 2px solid #fd5f06;
+}
+.navbar-nav > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+  font-weight: bolder;
+  letter-spacing: 3pt;
+}
+.navbar-brand span {
+  all: initial;
+  display: block;
+  color: #fb7c45;
+  font-size: large;
+}
+.row {
+  margin: 0px 15px;
+}
+.DownloadBtn > i,
+.FAQBtn > i {
+  vertical-align: middle;
+}
+.dropdown {
+  border-radius: 5px;
+}
+
+.utilityButtons {
+  margin: 25px;
+}
+
+.stat-cards {
+  margin: 15px 0px;
+  border: none;
+  border-radius: 5px;
+}
+
+.stat-cards .card-title {
+  font-size: larger;
+}
+
+.chart-card {
+  margin: 15px;
+}
+#chartdiv {
+  width: 100%;
+  height: 610px;
+}
+#bar-chartdiv {
+  width: 100%;
+  height: 450px;
+}
+.outer {
+  width: 100%;
+  padding-left: 75px;
+  align-items: center;
+}
+.inner {
+  padding: 5px;;
+}
+.map-chart {
+  background-color: #cedeeb;
+}
+.active-card {
+  background-color: #fff3e5;
+}
+.death-card {
+  background-color: #f6f6f6;
+}
+.confirmed-card {
+  background-color: #ffe9eb;
+}
+.recovered-card {
+  background-color: #eaf6e8;
+}
+.active-card h2,
+.active-card i,
+.active-card span {
+  color: #fe8a00;
+}
+.death-card h2,
+.death-card i,
+.death-card span {
+  color: #aaaaaa;
+}
+.confirmed-card h2,
+.confirmed-card i,
+.confirmed-card span {
+  color: #ff2e2d;
+}
+.recovered-card h2,
+.recovered-card i,
+.recovered-card span {
+  color: #46b332;
+}
+footer {
+  border-top: 2px solid #fd5f06;
+  text-align: center;
+}
+.barChartNav a {
+  color: #f45f25 
+}
+.toggle-on.btn-sm {
+  padding-right: 10px;
+}
+.toggle-off.btn-sm {
+  padding-left: 15px;
+}
