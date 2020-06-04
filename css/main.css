@@ -76,29 +76,33 @@
 }
 .active-card h2,
 .active-card i,
-.active-card span {
+.active-card span,
+.active-tab {
   color: #fe8a00;
 }
 .death-card h2,
 .death-card i,
-.death-card span {
+.death-card span,
+.death-tab {
   color: #aaaaaa;
 }
 .confirmed-card h2,
 .confirmed-card i,
-.confirmed-card span {
+.confirmed-card span,
+.confirmed-tab {
   color: #ff2e2d;
 }
 .recovered-card h2,
 .recovered-card i,
-.recovered-card span {
+.recovered-card span,
+.recovered-tab {
   color: #46b332;
 }
 footer {
   border-top: 2px solid #fd5f06;
   text-align: center;
 }
-.barChartNav .nav-link {
+.barChartNav .nav-link{
   color: black; 
   border-radius: 0;
 }
@@ -108,7 +112,7 @@ footer {
 .toggle-off.btn-sm {
   padding-left: 15px;
 }
-.barChartNav .nav-link.active{
+.barChartNav .nav-link.active, .mapChartNav .nav-link.active{
   background-color: transparent;
   color:#f45f25 ;
   border-bottom: 2px solid #fd5f06;
